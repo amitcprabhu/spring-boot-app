@@ -34,4 +34,4 @@ jobs:
     - name: Login docker hub
       run: docker login -u amitcprabhu -p ans@@@@2023
     - name: Push docker image to dockerhub
-      run: docker push amitcp/spring-boot-docker:v1
+      run: docker push amitcp/spring-boot-docker
