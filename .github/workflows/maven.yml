@@ -33,5 +33,7 @@ jobs:
       run: docker build -t amitcp/spring-boot-docker .
     - name: Login docker hub
       run: docker login -u amitcprabhu -p ans@@@@2023
+    - name: Docker tag
+      run: docker tag amitcp/spring-boot-docker amitcp/spring-boot-docker:latest
     - name: Push docker image to dockerhub
-      run: docker push amitcp/spring-boot-docker
+      run: docker push amitcp/spring-boot-docker:latest
